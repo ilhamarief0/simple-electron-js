@@ -1,6 +1,6 @@
 {
   "name": "simple-electron-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Aplikasi Desktop Simple dengan Electron",
   "main": "main.js",
   "author": {
