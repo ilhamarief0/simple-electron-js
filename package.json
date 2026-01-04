@@ -1,31 +1,39 @@
 {
-  "name": "hello-world-electron",
+  "name": "simple-electron-js",
   "version": "1.0.0",
+  "description": "Aplikasi Desktop Simple dengan Electron",
   "main": "main.js",
+  "author": {
+    "name": "Muh. Ilham Arief Prabowo",
+    "email": "ilham@technosstudio.com"
+  },
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
   },
+  "dependencies": {
+    "electron": "^33.4.11"
+  },
+  "devDependencies": {
+    "electron-builder": "^25.1.8"
+  },
   "build": {
-    "appId": "com.helloworld.app",
-    "productName": "Helloworld-Electron",
-    "mac": {
-      "target": "dmg",
-      "category": "public.app-category.utilities"
-    },
-    "win": {
-      "target": "nsis"
-    },
+    "appId": "com.meanhills.simpleelectron",
     "linux": {
       "target": [
         "AppImage",
         "deb"
       ],
-      "category": "Utility"
+      "maintainer": "ilham@technosstudio.com"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "publish": {
+      "provider": "github"
     }
-  },
-  "devDependencies": {
-    "electron": "^33.0.0",
-    "electron-builder": "^25.1.8"
   }
 }
