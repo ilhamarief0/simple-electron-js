@@ -1,6 +1,6 @@
 {
   "name": "simple-electron-js",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Aplikasi Desktop Simple",
   "main": "main.js",
   "author": {
@@ -9,11 +9,13 @@
   },
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder"
+    "build": "electron-builder",
+    "release": "standard-version"
   },
   "devDependencies": {
     "electron": "^33.4.11",
-    "electron-builder": "^25.1.8"
+    "electron-builder": "^25.1.8",
+    "standard-version": "^9.5.0"
   },
   "build": {
     "appId": "com.meanhills.simpleelectron",
