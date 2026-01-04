@@ -1,7 +1,7 @@
 {
   "name": "simple-electron-js",
   "version": "1.0.1",
-  "description": "Aplikasi Desktop Simple dengan Electron",
+  "description": "Aplikasi Desktop Simple",
   "main": "main.js",
   "author": {
     "name": "Muh. Ilham Arief Prabowo",
@@ -11,7 +11,6 @@
     "start": "electron .",
     "build": "electron-builder"
   },
-  "dependencies": {},
   "devDependencies": {
     "electron": "^33.4.11",
     "electron-builder": "^25.1.8"
@@ -19,10 +18,7 @@
   "build": {
     "appId": "com.meanhills.simpleelectron",
     "linux": {
-      "target": [
-        "AppImage",
-        "deb"
-      ],
+      "target": ["AppImage", "deb"],
       "maintainer": "ilham@example.com"
     },
     "win": {
@@ -32,7 +28,10 @@
       "target": "dmg"
     },
     "publish": {
-      "provider": "github"
+      "provider": "github",
+      "owner": "ilhamarief0",
+      "repo": "simple-electron-js",
+      "releaseType": "release"
     }
   }
 }
