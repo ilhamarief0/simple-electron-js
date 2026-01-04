@@ -16,7 +16,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.TOKEN }}
-          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -24,9 +23,9 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          npx standard-version
+          npm version patch -m "chore: bump version to %s [skip ci]"
           echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
-          git push --follow-tags origin main
+          git push && git push --tags
 
   release:
     needs: bump-version
