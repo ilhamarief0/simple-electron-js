@@ -5,16 +5,15 @@
   "main": "main.js",
   "author": {
     "name": "Muh. Ilham Arief Prabowo",
-    "email": "ilham@technosstudio.com"
+    "email": "ilham@example.com"
   },
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
   },
-  "dependencies": {
-    "electron": "^33.4.11"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "electron": "^33.4.11",
     "electron-builder": "^25.1.8"
   },
   "build": {
@@ -24,7 +23,7 @@
         "AppImage",
         "deb"
       ],
-      "maintainer": "ilham@technosstudio.com"
+      "maintainer": "ilham@example.com"
     },
     "win": {
       "target": "nsis"
