@@ -1,6 +1,6 @@
 {
   "name": "simple-electron-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Aplikasi Desktop Simple",
   "main": "main.js",
   "author": {
@@ -18,7 +18,10 @@
   "build": {
     "appId": "com.meanhills.simpleelectron",
     "linux": {
-      "target": ["AppImage", "deb"],
+      "target": [
+        "AppImage",
+        "deb"
+      ],
       "maintainer": "ilham@example.com"
     },
     "win": {
